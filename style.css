@@ -80,7 +80,6 @@ body {
     transform: rotate(15deg) scale(1.08);
 }
 
-/* Hero */
 .hero {
     min-height: calc(100vh - 76px);
     display: flex;
@@ -114,6 +113,17 @@ body {
     color: var(--dark);
     margin-bottom: 10px;
 }
+
+.no-break {
+    white-space: nowrap;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
 
 .hero h2 {
     font-size: 34px;
@@ -723,6 +733,18 @@ body.dark-mode .education-card p {
 
     .hero h1 {
         font-size: 54px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 32px;
     }
 }
 
